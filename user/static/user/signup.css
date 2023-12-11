@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+main{
+    margin: 50px 15%;
+}
+main div{
+    margin: 100px 100px 0 100px;
+    height: 680px;
+    border: 3px dashed rgba(117, 117, 117, 0.2);
+    padding-top: 20px;
+    background-color: rgba(238, 196, 196, 0.2);
+}
+main div p{
+    margin: 50px 20px 20px 80px;
+    font-size: 40px;
+    font-family: 'Do Hyeon', sans-serif;
+}
+form{
+    margin: 80px auto 80px auto;
+    width: 700px;
+}
+label{
+    margin: 60px 20px 20px 150px;
+    font-size: 30px;
+    font-family: 'Do Hyeon', sans-serif;
+}
+input[type='text'], input[type='password']{
+    margin: 5px 180px 45px 20px;
+    padding: 3px;
+    width: 200px;
+    font-family: 'Poor Story', cursive;
+    font-size: 15px;
+    height: 30px;
+}
+input[type='submit']{
+    font-family: 'Do Hyeon', sans-serif;
+    border: 3px solid #132C33; 
+    background-color: #D8E3E7; 
+    color: #126E82; 
+    padding: 5px;
+    font-size: 25px;
+    border-radius: 8px;
+    margin-left: 480px;
+}
+input[type='submit']:hover{
+    color:#D8E3E7; 
+    background-color: #126E82;
+}

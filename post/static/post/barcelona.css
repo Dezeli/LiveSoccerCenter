@@ -1,0 +1,35 @@
+
+h1{
+    color: yellow;
+}
+h2{
+    color: pink;
+    margin-top: 100px;
+}
+main p{
+    color: azure;
+}
+main{
+    margin:0 15%;
+    background-image: url(images/barcelona/바르셀로나.jpg);
+    background-repeat: round;
+    text-align: center;
+    padding: 50px;
+}
+main img{
+    width: 250px;
+    height: 250px;
+}
+main div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+main div a{
+    margin: 0 10px;
+}
+.long-img{
+    width: 430px;
+    height: 250px;
+}

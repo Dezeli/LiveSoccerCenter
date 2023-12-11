@@ -1,0 +1,21 @@
+{% extends './base.html' %}
+{% load static %}
+{% block staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'post/edit.css' %}" />
+{% endblock %}
+{% block content %}
+    {% if user|lower == id_data.writer|lower %}
+    <main>
+      <form action="{% url 'post:edit' id_data.id %}" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" name="" value="수정하기">
+      </form>
+    </main>
+    {% else %}
+    <main>
+        <label>수정할 수 없는 글입니다.</label><br>
+        <label><a href="{% url 'post:index'%}">게시판으로 가기</a></label>
+    </main>
+    {% endif %}
+{% endblock %}

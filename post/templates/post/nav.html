@@ -1,0 +1,34 @@
+{% load static %}
+<nav>
+    {% if not user.is_authenticated %}
+    <aside>
+        <a class="log" href="{% url 'user:login' %}">로그인</a>
+        <a class="log" href="{% url 'user:signup' %}">회원가입</a>
+    </aside>
+    {% else %}
+    <aside>
+        <a>환영합니다. {{ user.first_name }}님</a>
+        <a class="log" href="{% url 'user:logout' %}">로그아웃</a>
+    </aside>
+    {% endif %}
+    
+
+    <section>
+        <div>
+            <a href="{% url 'post:index' %}">
+                <img src="{% static 'post/images/main_logo.png' %}" alt="" width="230" height="100">
+            </a>
+        </div>
+        <div class="hover-menu">
+            <a class="menu" href="{% url 'post:index' %}">게시판</a>
+        </div>
+        <div class="dropdown hover-menu">
+            <a class="menu" href="#">팬 페이지</a>
+            <div class="dropdown-content">
+                <a href="{% url 'post:barca' %}">바르셀로나</a>
+                <a href="{% url 'post:ulsan' %}">울산현대</a>
+            </div>
+        </div>
+    </section>
+</nav>
+

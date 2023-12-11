@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Sunflower:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+nav{
+    margin:0 15% 50px 15%;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+}
+nav aside{
+    text-align: right;
+    padding: 5px 0;
+}
+nav aside a{
+    font-size: 20px;
+    font-family: 'Cute Font', cursive;
+    font-weight: bolder;
+}
+.log{
+    color: red;
+}
+nav section{
+    display: flex;
+    padding: 10px;
+    margin-top: 5px;
+    border-style: ridge outset outset groove;
+    border-width: 5px;
+    background-color: #DDDDDD;
+
+}
+nav section div{
+    flex-direction: column;
+    margin-right: 50px;
+}
+nav section div a{
+    font-family: 'Jua', sans-serif;
+    font-size: 25px;
+}
+
+
+
+
+.menu{
+    line-height: 100px;
+    padding: 10px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    z-index: 1;
+    background-color: #ddd;
+    margin-top: -20px;
+}
+
+.dropdown-content a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    font-family: 'Sunflower', sans-serif;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.hover-menu:hover > .menu{
+    background-image: url(images/goalpost.jpg);
+    background-size: 100% 100%;
+    border-style: ridge;
+    border-color: white;
+    color: yellowgreen;
+}
+
+
+.dropdown-content a:hover {
+    color: red;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

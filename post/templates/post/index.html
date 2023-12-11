@@ -1,0 +1,53 @@
+{% extends './base.html' %}
+{% load static %}
+{% block staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'post/index.css' %}" />
+{% endblock %}
+{% block content %}
+<main>
+    {% if user.is_authenticated %}
+        <form action="{% url 'post:add' %}" method="GET">
+                <button type="submit">추가하기</button>
+        </form>
+    {% endif %}
+    <div>
+        {% if Post_data %}
+        {% for data in Post_data %}
+        <div class="post">
+            <a href="{% url 'post:detail' data.id %}">
+                {% if data.files %}
+                <div>
+                    <img src="{{ data.files.url }}"
+                        onerror="this.onerror=null; this.src='{% static 'post/images/no_image.png' %}'" alt="...">
+                </div>
+                {% else %}
+                <div>
+                    <img src="{% static 'post/images/no_image.png' %}" alt="...">
+                </div>
+                {% endif %}
+                <p class="title">{{ data.title }}</p>
+                <p>{{ data.pub_date }}</p>
+                <p>{{ data.writer.first_name }}</p>
+
+            </a>
+        </div>
+        {% endfor %}
+        {% else %}
+        <div class="post">
+            <div>
+                <img src="{% static 'post/images/no_image.png' %}" alt="...">
+            </div>
+            <div>
+                <h5>게시물이 없습니다.</h5>
+                <p>새로운 게시물을 등록해주세요.</p>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+    {% if messages %}
+    {% for message in messages %}
+    <script>alert("{{ message }}")</script>
+    {% endfor %}
+    {% endif %}
+</main>
+{% endblock %}

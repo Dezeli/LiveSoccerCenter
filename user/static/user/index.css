@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+.big-bg{
+    background-image: url(images/index_bg.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+.title-content{
+    background-color: rgba( 255, 255, 255, 0.7);
+    text-align: center;
+    margin-top: 6%;
+    padding: 30px;
+}
+.title-content img{
+    height: 200px;
+    width: 400px;
+}
+h2{
+    font-size: 4.75rem;
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+}
+a{
+    font-family: 'Do Hyeon', sans-serif;
+    border: 3px solid #132C33; 
+    background-color: #D8E3E7; 
+    color: #126E82; 
+    padding: 5px;
+    font-size: 25px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+a:hover{
+    color:#D8E3E7; 
+    background-color: #126E82;
+}
+p{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bold;
+    font-size: 1.125rem;
+    margin: 10px 0 42px;
+}

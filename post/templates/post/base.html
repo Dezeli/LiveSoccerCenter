@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>Sound Makes Football</title>
+    {% load static %}
+    {% block staticfiles %}
+    {% endblock %}
+    <link rel="icon" type="image/ico" href="{% static 'post/images/main_icon.ico' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'post/footer.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'post/nav.css' %}" />
+</head>
+
+<body>
+    {% include "./nav.html" %}
+    {% block content %}
+    {% endblock %}
+    {% include "./footer.html" %}
+</body>
+
+</html>

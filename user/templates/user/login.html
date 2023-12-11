@@ -1,0 +1,22 @@
+{% extends 'post/base.html' %}
+{% load static %}
+{% block staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'user/login.css' %}" />
+{% endblock %}
+{% block content %}
+    <main>
+        <div>
+            <p><로그인></p>
+            <form action="{% url 'user:login' %}" method="POST">
+                {% csrf_token %}
+                {{ form }}
+                <input type="submit" name="" value="로그인">
+            </form>
+            {% if messages %}
+            {% for message in messages %}
+            <script>alert("{{ message }}")</script>
+            {% endfor %}
+            {% endif %}
+        </div>
+    </main>
+{% endblock %}

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+main{
+    margin:0 18%;
+}
+.title{
+    margin: 0 0 10px 20px;
+    font-family: 'Do Hyeon', sans-serif;
+    font-weight: 600;
+    font-size: 45px;
+}
+.writer{
+    margin: 10px 30px 20px 30px;
+    font-family: 'Sunflower', sans-serif;
+    font-size: 20px;
+    text-align: right;
+}
+.file{
+    text-align: right;
+    margin: 5px 10px 10px 20px;
+    font-weight: bold;
+    word-break:break-all;
+}
+.image{
+    max-width: 600px;
+    border: 2px solid gray;
+    margin: 20px 0;
+}
+.content-box{
+    border: 3px dashed rgba(117, 117, 117, 0.2);
+}
+.content{
+    margin: 20px;
+    word-break:break-all;
+    font-family: 'Poor Story', cursive;
+    font-size: 20px;
+    font-weight: 600;
+}
+.comment-label{
+    margin: 60px 0 20px 20px;
+    font-size: 30px;
+    font-family: 'Do Hyeon', sans-serif;
+}
+.comment-box{
+    border: 3px dashed rgba(117, 117, 117, 0.2);
+    padding: 30px 5px 5px 10px;
+}
+.comment1{
+    margin-left: 30px;
+    display: inline;
+    font-family: 'Single Day', cursive;
+    font-size: 20px;
+    font-weight: normal;
+}
+.comment2{
+    background-color: rgba(148, 208, 204, 0.1);
+    word-break:break-all;
+    margin: 5px 20px 25px 20px;
+    padding: 8px;
+    border: 2px dotted rgba(117, 117, 117, 0.4);
+    font-family: 'Gamja Flower', cursive;
+    font-size: 20px;
+}
+.comment3{
+    margin: 5px 20px 25px 20px;
+    padding: 8px;
+    font-family: 'Single Day', cursive;
+    font-size: 20px;
+}
+.input-box{
+    margin: 5px 20px 25px 20px;
+    padding: 3px;
+    width: 750px;
+    font-family: 'Gamja Flower', cursive;
+    font-size: 15px;
+    height: 30px;
+    max-width: 78%;
+}
+.input-btn{
+    height: 40px;
+    width: 70px;
+    padding: 3px;
+    font-family: 'Gamja Flower', cursive;
+    font-size: 15px;
+    font-weight: bold;
+}
+.post-forms{
+    display: flex;
+    width: 200px;
+    margin: 0 20px 30px auto;
+
+}
+.post-form{
+    width: 100px;
+}
+.post-btn{
+    font-family: 'Do Hyeon', sans-serif;
+    border: 3px solid #132C33; 
+    background-color: #D8E3E7; 
+    color: #126E82; 
+    padding: 5px;
+    font-size: 25px;
+    border-radius: 8px;
+}
+.post-btn:hover{
+    color:#D8E3E7; 
+    background-color: #126E82;
+}

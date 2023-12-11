@@ -1,0 +1,9 @@
+main{
+    margin:0 15%;
+    background-image: url(images/ulsan/울산\ 현대\ 배경.jpeg);
+    background-repeat: round;
+    padding: 50px;
+}
+main img{
+    text-align: center;
+}

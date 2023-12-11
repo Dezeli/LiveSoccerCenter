@@ -1,0 +1,14 @@
+config:
+  target: "http://127.0.0.1:8000"
+  phases:
+    - duration: 30
+      arrivalRate : 50
+      name: Warm up
+scenarios:
+  - name: "Just Get Hash"
+    flow:
+      - get:
+          url:  "/post/ulsan"
+
+
+# artillery

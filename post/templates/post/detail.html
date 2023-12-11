@@ -1,0 +1,57 @@
+{% extends './base.html' %}
+{% load static %}
+{% block staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'post/detail.css' %}" />
+{% endblock %}
+{% block content %}
+<main>
+  {% if id_data %}
+  <p class="title">{{ id_data.title }}</p>
+  <p class="writer">{{ id_data.writer.first_name }}</p>
+  <div class="content-box">
+    {% if id_data.files %}
+      <a class="btn" href={{ id_data.files.url }} download>
+        <p class="file">파일 : {{ id_data.get_file_name }}</p>
+      </a>
+      <center><img class="image" src="{{ id_data.files.url }}" alt=""></center>
+    {% endif %}
+    <p class="content">{{ id_data.content }}</p>
+    {% if user|lower == id_data.writer|lower %}
+    <div class="post-forms">
+      <form class="post-form" action="{% url 'post:edit' id_data.id %}" method="GET" enctype="multipart/form-data">
+        <input class="post-btn" type="submit" name="" value="수정하기">
+      </form>
+      <form class="post-form"  action="{% url 'post:detail' id_data.id %}" method="POST">
+        {% csrf_token %}
+        <input class="post-btn" type="submit" name="" value="삭제하기">
+      </form>
+    </div>
+    {% endif %}
+  {% else %}
+    <p>게시글 내용이 없습니다.</p>
+  {% endif %}
+  </div>
+
+  <p class="comment-label">
+    <댓글>
+  </p>
+  <div class="comment-box">
+    {% if comment_datas %}
+    {% for comment_data in comment_datas %}
+    <p class="comment1">{{ comment_data.writer.first_name }}</p>
+    <p class="comment1">{{ comment_data.pub_date }}</p>
+    <p class="comment2">{{ comment_data.content }}</p>
+    {% endfor %}
+    {% else %}
+    <p class="comment3">작성된 댓글이 없습니다.</p>
+    {% endif %}
+    {% if user.is_authenticated %}
+    <form action="{% url 'post:comment' id_data.id %}" method="POST">
+      <input class="input-box" placeholder="내용을 입력하세요." type="text" name="comment" wrap="virtual">
+      {% csrf_token %}
+      <input class="input-btn" type="submit" name="" value="댓글달기">
+    </form>
+    {% endif %}
+  </div>
+</main>
+{% endblock %}
