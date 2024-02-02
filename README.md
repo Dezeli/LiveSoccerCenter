@@ -2,8 +2,8 @@
 Django를 이용하여 만들어본 사이트입니다.   
 ***
 ### ※ 주의 사항
-https://soundmakesfootball.herokuapp.com 를 통해 확인해보실 수 있습니다.   
-또는 Django를 이용하였기 때문에 명령 프롬프트 창에서    
+Heroku를 이용한 베포는 종료되었습니다.
+Django를 이용하였기 때문에 명령 프롬프트 창에서    
 py manage.py runserver 명령어를 통해 웹사이트를   
 PC 서버에서 확인해 볼 수 있습니다.   
 ***
