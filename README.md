@@ -41,5 +41,5 @@ PC 서버에서 확인해 볼 수 있습니다.
 ***
 ## 실행사진
 <img src="https://user-images.githubusercontent.com/63716450/126036634-2cd7bc5f-46d2-4b95-a74e-790f721ff540.PNG"  width="900" height="500">
-<img src="https://user-images.githubusercontent.com/63716450/126036636-36e6a49c-5d15-45e0-92fe-ca9bf2c4e32b.PNG"  width="900" height="500">
+<img src="https://github.com/Dezeli/LiveSoccerCenter/assets/142760384/bb1af7e5-c020-4cf7-bb41-c05edc6bffab"  width="900" height="500">
 <img src="https://user-images.githubusercontent.com/63716450/126036637-6fccdcf7-e100-4899-8e7b-e95aae74d71b.PNG"  width="900" height="500">
